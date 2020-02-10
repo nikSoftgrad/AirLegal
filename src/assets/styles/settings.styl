@@ -73,3 +73,13 @@ a
   &:hover
     text-decoration none
     color #000
+
+.visible-mobile
+  display none
+
+  +below(540px)
+    display block
+
+.hidden-md
+  +below(lg-breakpoint)
+    display none

@@ -1,2 +1,35 @@
 mixin header()
   +b.HEADER.header
+    .container
+      +e.main
+        a(href="/").logo
+          img(src="/assets/images/logo.png")
+
+        +b.collapse#collapsed
+          +e.line
+          +e.line
+          +e.line
+
+      +e.content#collapsed-menu
+        +b.navbar
+          +e.left
+
+            +b.list-menu
+              +e.item
+                +e.A(href="/").link Flight Delay Compensation
+              +e.item
+                +e.A(href="/").link Flight Cancellation Compensation
+              +e.item.hidden-md
+                +e.A(href="/").link Overbooking
+
+          +e.right
+            +b.list-menu
+              +e.item
+                +e.A(href="/").link Help
+              +e.item
+                +b.A(href="/").link-icon
+                  +inline-svg('user')
+                  | User area
+              +e.item.--btn
+                +b.A(href="/").btn--sm
+                  span Claim Now
