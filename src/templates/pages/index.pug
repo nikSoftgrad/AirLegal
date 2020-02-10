@@ -1,4 +1,8 @@
 extends ../layouts/main
+include ../blocks/hero/hero
 
 block content
-  h1 Стартовый шаблон !
+
+  +b.page--main
+    +e.hero
+      +hero
