@@ -1,0 +1,7 @@
+mixin inline-svg(name,add_class)
+  if add_class === undefined
+    - add_class = ''
+  else
+    - add_class = ' '+add_class
+  svg.icon(class=name+add_class)
+    use(xlink:href=`#${name}`)
