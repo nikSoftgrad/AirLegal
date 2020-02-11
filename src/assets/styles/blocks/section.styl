@@ -18,6 +18,17 @@
   &--gray
     background #f4f7fb
 
+  &--claim
+    padding 50px 0
+
+    & ^[0]__title
+      text-align left
+      font-size 25px
+      line-height 32px
+
+    & ^[0]__list
+      margin-top 35px
+
   &__title
     font-family font-family-Xbold
     font-size 32px
@@ -51,6 +62,17 @@
 
   &__item
     width 203px
+
+.claim-user
+  margin-left -30px
+  margin-top -30px
+  display flex
+  flex-wrap wrap
+
+  &__item
+    flex-basis 360px
+    min-width 360px
+    margin 30px 0 0 30px
 
 .option
   display flex
@@ -323,5 +345,39 @@
   &__btn-wrap
     margin-top 30px
 
+.claim-card
+  box-shadow 0 10px 30px rgba(8, 32, 59, 0.13)
+  padding 35px 30px 30px
 
+  &__title
+    font-family font-family-reg
+    font-size 22px
+    line-height 26px
 
+  &__content
+    margin-top 10px
+
+  &__item
+    display flex
+    align-items center
+    font-family font-family-reg
+    font-size 15px
+    line-height 26px
+
+    &:nth-child(odd)
+      background #eff3f9
+
+    &:nth-child(even)
+      background #fff
+
+  &__left,&__right
+    padding 0 12px
+
+  &__left
+    width 43%
+
+  &__right
+    width 57%
+
+  &__btn-wrap
+    margin-top 20px
