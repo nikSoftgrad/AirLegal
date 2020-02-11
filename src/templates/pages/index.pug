@@ -6,3 +6,65 @@ block content
   +b.page--main
     +e.hero
       +hero
+
+    +e.work
+      +b.section--work
+        .container
+          +e.title How does Airning work?
+
+          +e.row--airing
+            +b.list-airing
+              +e.item
+                +b.card-airing
+                  +e.number 01
+                  +e.content Fill out the form, #[br] it is easy and fast
+              +e.item
+                +b.card-airing
+                  +e.number 02
+                  +e.content Send us the necessary #[br] documentation
+              +e.item
+                +b.card-airing
+                  +e.number 03
+                  +e.content Receive compensation #[br] in your account
+
+          +e.row--claim
+            +b.list-claim
+              +e.item
+                +b.card-claim--first
+                  +e.title When can I claim?
+                  +e.content
+                    +e.item
+                      .plus +
+                      | Claim for flight delay
+                    +e.item
+                      .plus +
+                      | Claim for flight cancellation
+                    +e.item
+                      .plus +
+                      | Overbooking
+                  +e.action
+                    +e.A(href="/").link know your rights
+                    +e.btn
+                      +b.BUTTON.btn--lg
+                        span CLAIM now
+
+              +e.item
+                +b.card-claim--second
+                  +e.title How much will my #[br] compensation be?
+                  +e.content--sm
+                    +e.description How much can I get? The average number of claims made through Airning is 400€
+                    +e.item--sm
+                      +b.li-dot
+                        +e.left 0 - 1500 km
+                        +e.middle
+                        +e.right 250€
+                    +e.item--sm
+                      +b.li-dot
+                        +e.left 1500 - 3500 km
+                        +e.middle
+                        +e.right 400€
+                    +e.item--sm
+                      +b.li-dot
+                        +e.left + 3500 km
+                        +e.middle
+                        +e.right 600€
