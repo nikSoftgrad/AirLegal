@@ -1,0 +1,34 @@
+mixin footer()
+  +b.FOOTER.footer
+    .container
+      +e.main
+        a(href="/").logo
+          img(src="/assets/images/logo-footer.png")
+
+        +e.copyright (c) 2020. Все права защищены #[br] Конфиденциальность
+
+      +e.content
+        +b.list-footer
+          +e.item
+            +b.list-link
+              +e.item--title Your rights
+              +e.A(href="/").item Passenger rights
+              +e.A(href="/").item Flight Delay Compensation
+              +e.A(href="/").item Flight Cancellation Compensation
+              +e.A(href="/").item Overbooking claim
+
+          +e.item
+            +b.list-link
+              +e.item--title Legal
+              +e.A(href="/").item Disclaimer
+              +e.A(href="/").item Terms and conditions
+              +e.A(href="/").item Privacy Policy
+              +e.A(href="/").item Cookie Policy
+
+          +e.item
+            +b.list-link
+              +e.item--title Airning
+              +e.A(href="/").item About us
+              +e.A(href="/").item Help
+              +e.A(href="/").item Blog
+              +e.A(href="/").item Contact
