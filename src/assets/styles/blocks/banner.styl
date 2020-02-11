@@ -26,3 +26,118 @@
     background-position center
     min-height 400px
     color #fff
+
+.price-block
+  display flex
+  flex-direction column
+  align-items center
+  width 100%
+  color #212121
+
+  &__title
+    font-family font-family-Xbold
+    font-size 32px
+    line-height 24px
+    text-align center
+    text-transform uppercase
+
+    & + .price-block__subtitle
+      margin-top 22px
+
+  &__subtitle
+    font-family font-family-reg
+    font-size 18px
+    line-height 26px
+    text-align center
+    max-width 732px
+
+  &__list
+    margin-top 50px
+    width 100%
+
+.list-price
+  display flex
+  margin-left -30px
+
+  &__item
+    flex-basis 360px
+    margin-left 30px
+
+.price-card
+  width 100%
+  position relative
+
+  &__title
+    font-family font-family-Xbold
+    font-size 22px
+    line-height 16px
+    text-transform uppercase
+
+    &.negative
+      color #ff5858
+
+    &.warn
+      color #ffc000
+
+    &.accent
+      color #9ebde1
+
+  &__date
+    font-family font-family-reg
+    font-size 16px
+    line-height 15px
+    margin-top 25px
+    color #818387
+
+  &__value
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    margin-top 23px
+
+  &__hr
+    height 20px
+    position relative
+    width 126px
+
+    &:before
+      content ''
+      position absolute
+      top 50%
+      left 0
+      transform translateY(-50%)
+      width 100%
+      height 2px
+      background#d2d6dc
+
+  &__main-value
+    font-family font-family-reg
+    font-size 18px
+    line-height 20px
+
+  &__second-value
+    font-family font-family-Xbold
+    font-size 14px
+    line-height 20px
+    text-transform uppercase
+
+  &__content
+    min-height 200px
+    width 100%
+    position relative
+    background #fff
+    box-shadow 0 10px 40px rgba(8, 32, 59, 0.08)
+    padding 35px 35px 30px
+    display flex
+    align-items center
+    flex-direction column
+
+  &:before
+    left 15px
+    width calc(100% - 30px)
+    height 50px
+    position absolute
+    content ""
+    bottom -10px
+    box-shadow 0 10px 40px rgba(8,32,59,.08)

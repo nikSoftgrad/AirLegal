@@ -4,10 +4,10 @@ include ../blocks/hero/hero
 block content
 
   +b.page--main
-    +e.hero
+    +e.row
       +hero
 
-    +e.work
+    +e.row
       +b.section--work
         .container
           +e.title How does Airning work?
@@ -69,14 +69,14 @@ block content
                         +e.middle
                         +e.right 600€
 
-    +e.banner
+    +e.row
       +b.banner--first
         .container
           +e.content
             +e.title 98%
             +e.description of successful claims
 
-    +e.options
+    +e.row
       +b.section--options
         .container
           +e.title Why Airning is the best option?
@@ -105,7 +105,7 @@ block content
                   +e.icon
                     img(src="assets/images/wallet.svg")
                   +e.text Claim does not have any cost. Only if we win, we discount 25 % + VAT of the amount
-    +e.faq
+    +e.row
       +b.section--faq
         .container
           +b.faq
@@ -121,3 +121,41 @@ block content
             +e.right
               +e.img
                 img(src="assets/images/faq-img.png", alt="")
+
+    +e.row
+      +b.section--price
+        .container
+          +b.price-block
+            +e.title How do we win your flight compensation?
+            +e.subtitle If you have suffered a flight delay or cancellation during your vacation, weekend getaway or business trip, we can locate your flight number on our platform and know immediately if you are entitled to a compensation of up to 600€ depending on the type of incident and distance.
+            +e.list
+              +b.list-price
+                +e.item
+                  +b.price-card
+                    +e.content
+                      +e.title.negative Cencelado
+                      +e.date 20 Julio
+                      +e.value
+                        +e.main-value FR 4352
+                        +e.hr
+                        +e.second-value IBZ - MAD
+
+                +e.item
+                  +b.price-card
+                    +e.content
+                      +e.title.warn restrasado
+                      +e.date 12 Septembre
+                      +e.value
+                        +e.main-value U2 3456
+                        +e.hr
+                        +e.second-value mxp - bcn
+
+                +e.item
+                  +b.price-card
+                    +e.content
+                      +e.title.accent overbooking
+                      +e.date 20 Julio
+                      +e.value
+                        +e.main-value IB 4352
+                        +e.hr
+                        +e.second-value MAD - TFS
