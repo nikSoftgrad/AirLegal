@@ -8,4 +8,79 @@ block content
         .container
           +e.title Claim Process with airlegal
 
-    +e.row tabs
+    +e.row--mt-md
+      .container
+        +b.tabs
+          +e.item.active
+            +e.icon
+              .air
+                +inline-svg('flight')
+            +e.text Airlegal
+
+          +e.item
+            +e.icon--claim
+              +inline-svg('clipboard')
+            +e.text claim
+
+          +e.item
+            +e.icon--pay
+              +inline-svg('wallet')
+            +e.text Payment
+          +e.item
+            +e.icon--process
+              +inline-svg('back-in-time')
+            +e.text PROCESS/AIRLINE
+
+    +e.row--mt-md
+      .container
+        +b.accordion
+          +e.title payment
+          +e.content
+            +e.item
+              +e.link
+                +e.icon ?
+                +e.link-content Is the compensation collected subject to tax?
+                +e.arrow
+                  img(src="assets/images/arrow.png", alt="")
+
+              +e.text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam tempora fuga magnam debitis unde nulla quam porro, eum vel sed delectus minus recusandae quis facilis placeat iure ad voluptatum! Earum!
+
+            +e.item.isActive
+              +e.link
+                +e.icon ?
+                +e.link-content How much does Airning charge for its services?
+                +e.arrow
+                  img(src="assets/images/arrow.png", alt="")
+
+              +e.text
+                p Airning operates under the "No Win No Fee" policy, ie Airning will only have a successful commission if the airline indemnifies the passenger for the claim filed on their behalf. Airning will never charge the passenger any concept if the claim is not obtained, nor to start the process.
+                p Thus, Airning assumes the initial costs and only applies to the passenger a commission on success, which is 25 % + VAT of the total amount recovered.
+                p There are no surcharges or extra charges, Airning will charge once you have paid the customer the corresponding compensation.
+
+            +e.item
+              +e.link
+                +e.icon ?
+                +e.link-content The airlines pays me or Airning?
+                +e.arrow
+                  img(src="assets/images/arrow.png", alt="")
+
+              +e.text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam tempora fuga magnam debitis unde nulla quam porro, eum vel sed delectus minus recusandae quis facilis placeat iure ad voluptatum! Earum!
+
+            +e.item
+              +e.link
+                +e.icon ?
+                +e.link-content How do I receive the money?
+                +e.arrow
+                  img(src="assets/images/arrow.png", alt="")
+
+              +e.text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam tempora fuga magnam debitis unde nulla quam porro, eum vel sed delectus minus recusandae quis facilis placeat iure ad voluptatum! Earum!
+
+            +e.item
+              +e.link
+                +e.icon ?
+                +e.link-content When will I get the money?
+                +e.arrow
+                  img(src="assets/images/arrow.png", alt="")
+
+              +e.text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam tempora fuga magnam debitis unde nulla quam porro, eum vel sed delectus minus recusandae quis facilis placeat iure ad voluptatum! Earum!
+

@@ -1,0 +1,80 @@
+.tabs
+  display flex
+  align-items center
+  border 1px solid #d2d6dc
+  height 80px
+
+  &__item
+    width 25%
+    display flex
+    align-items center
+    justify-content center
+    cursor pointer
+    transition all .2s
+    height 100%
+
+    &:first-child
+      border-top-left-radius 3px
+      border-bottom-left-radius 3px
+
+    &:last-child
+      border-top-right-radius 3px
+      border-bottom-right-radius 3px
+
+    &.active,&:hover
+      background-color #9ebde1
+      color #ffffff
+
+      .tabs__text
+        text-decoration none
+
+      .tabs__icon
+        .air
+          border-color #fff
+
+        .icon
+          fill #ffffff
+  &__icon
+    width 36px
+    height 36px
+    display flex
+    margin-right 10px
+
+    .air
+      border-radius 50%
+      border 1px solid #9ebde1
+      width 36px
+      height 36px
+      display flex
+      align-items center
+      justify-content center
+      transform rotate(45deg)
+      transform-origin center
+
+      .icon
+        fill #9ebde1
+        width 18px
+        height 20px
+        position relative
+
+    &--claim
+      .icon
+        width 33px
+        height 35px
+
+    &--pay
+      .icon
+        width 31px
+        height 29px
+
+    &--process
+      .icon
+        width 31px
+        height 31px
+
+  &__text
+    font-family font-family-reg
+    font-size 16px
+    line-height 16px
+    text-transform uppercase
+    text-decoration underline

@@ -1,0 +1,78 @@
+.accordion
+  padding 20px 0
+  &__title
+    font-family font-family-Xbold
+    font-size 26px
+    line-height 19px
+    text-transform uppercase
+
+  &__content
+    margin-top 25px
+
+  &__item
+    cursor pointer
+    max-height 60px
+    height 60px
+    overflow hidden
+    transition height .5s, max-height .5s
+
+    & + &
+      margin-top 20px
+
+    &.isActive
+      box-shadow 0 10px 30px rgba(8, 32, 59, 0.13)
+      max-height 500px
+      height auto
+
+      .accordion__link
+        background #fff
+
+      .accordion__link-content
+        font-family font-family-Xbold
+
+      .accordion__text
+        display block
+        background #fff
+
+      .accordion__arrow
+        transform rotate(180deg)
+        top 25px
+
+  &__link
+    display flex
+    align-items center
+    padding 18px 40px 19px 25px
+    background-color #eff3f9
+    position relative
+
+  &__arrow
+    position absolute
+    right 20px
+    width 27px
+    height 24px
+    top 20px
+    cursor pointer
+
+  &__link-content
+    font-family font-family-reg
+    font-size 22px
+    line-height 22px
+
+  &__icon
+    font-size 32px
+    line-height 32px
+    font-family font-family-Xbold
+    color #2a8cff
+    margin-right 20px
+
+  &__text
+    display none
+    padding 4px 65px 20px 60px
+    font-size 17px
+    font-family font-family-reg
+
+    p
+      margin 0
+
+    p + p
+      margin-top 17px
