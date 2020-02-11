@@ -1,0 +1,36 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--user
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title User area
+
+    +e.row
+      +b.user-data
+        .container
+          +e.left
+            +e.row
+              +e.title Mis datos
+              +e.A(href="/").link Cerrar sesion
+            +e.row
+              +e.item
+                +e.icon
+                  img(src="assets/images/envelope.png")
+                +e.text josebamenoyolatorre@gmail.com
+
+              +e.item
+                +e.icon
+                  img(src="assets/images/phone.png")
+                +e.text +35678900988
+
+              +e.item
+                +e.icon
+                  img(src="assets/images/place.png")
+                +e.text Spain
+
+          +e.right
+            +b.BUTTON.btn--sm
+              span editar
