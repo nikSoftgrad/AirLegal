@@ -1,183 +1,36 @@
 extends ../layouts/main
+include ../blocks/banners/banner-1
+include ../blocks/banners/banner-2
 include ../blocks/hero/hero
+include ../blocks/sections/section-options
+include ../blocks/sections/section-work
+include ../blocks/sections/section-faq
+include ../blocks/sections/section-price
+include ../blocks/sections/section-complete
 
 block content
 
   +b.page--main
     +e.row
-      +hero
+      +hero()
 
     +e.row
-      +b.section--work
-        .container
-          +e.title How does Airning work?
-
-          +e.row--airing
-            +b.list-airing
-              +e.item
-                +b.card-airing
-                  +e.number 01
-                  +e.content Fill out the form, #[br] it is easy and fast
-              +e.item
-                +b.card-airing
-                  +e.number 02
-                  +e.content Send us the necessary #[br] documentation
-              +e.item
-                +b.card-airing
-                  +e.number 03
-                  +e.content Receive compensation #[br] in your account
-
-          +e.row--claim
-            +b.list-claim
-              +e.item
-                +b.card-claim--first
-                  +e.title When can I claim?
-                  +e.content
-                    +e.item
-                      .plus +
-                      | Claim for flight delay
-                    +e.item
-                      .plus +
-                      | Claim for flight cancellation
-                    +e.item
-                      .plus +
-                      | Overbooking
-                  +e.action
-                    +e.A(href="/").link know your rights
-                    +e.btn
-                      +b.BUTTON.btn--lg
-                        span CLAIM now
-
-              +e.item
-                +b.card-claim--second
-                  +e.title How much will my #[br] compensation be?
-                  +e.content--sm
-                    +e.description How much can I get? The average number of claims made through Airning is 400€
-                    +e.item--sm
-                      +b.li-dot
-                        +e.left 0 - 1500 km
-                        +e.middle
-                        +e.right 250€
-                    +e.item--sm
-                      +b.li-dot
-                        +e.left 1500 - 3500 km
-                        +e.middle
-                        +e.right 400€
-                    +e.item--sm
-                      +b.li-dot
-                        +e.left + 3500 km
-                        +e.middle
-                        +e.right 600€
+      +section-work()
 
     +e.row
-      +b.banner--first
-        .container
-          +e.content
-            +e.title 98%
-            +e.description of successful claims
+      +banner-1()
 
     +e.row
-      +b.section--options
-        .container
-          +e.title Why Airning is the best option?
-          +e.row--options
-            +b.list-options
-              +e.item
-                +b.option
-                  +e.icon
-                    img(src="assets/images/world.svg")
-                  +e.text We monitor all flights with incidents in real time so we can help you from the first moment
-
-              +e.item
-                +b.option
-                  +e.icon
-                    img(src="assets/images/manager.svg")
-                  +e.text Our experts in passenger rights will handle your claim and solve your doubts
-
-              +e.item
-                +b.option
-                  +e.icon
-                    img(src="assets/images/plane-ticket.svg")
-                  +e.text We will contact your airline to get a fair compensation for each passenger
-
-              +e.item
-                +b.option
-                  +e.icon
-                    img(src="assets/images/wallet.svg")
-                  +e.text Claim does not have any cost. Only if we win, we discount 25 % + VAT of the amount
-    +e.row
-      +b.section--faq
-        .container
-          +b.faq
-            +e.left
-              +e.row
-                +e.title FAQ
-                +e.subtitle About the payment of compensation for delayed flight, overbooking or cancellation
-              +e.row
-                +e.description The law protects you! And Airning too. The European Union passed in 2004 the CE/261 Regulation to defend the rights of the passenger and Airning knows it very well. That's why, when you have a cancelled, delayed or overbooked flight, we are your ideal travel companion.
-              +e.row--btn
-                +b.BUTTON.btn--lg
-                  span your rights
-            +e.right
-              +e.img
-                img(src="assets/images/faq-img.png", alt="")
+      +section-options()
 
     +e.row
-      +b.section--price
-        .container
-          +b.price-block
-            +e.title How do we win your flight compensation?
-            +e.subtitle If you have suffered a flight delay or cancellation during your vacation, weekend getaway or business trip, we can locate your flight number on our platform and know immediately if you are entitled to a compensation of up to 600€ depending on the type of incident and distance.
-            +e.list
-              +b.list-price
-                +e.item
-                  +b.price-card
-                    +e.content
-                      +e.title.negative Cencelado
-                      +e.date 20 Julio
-                      +e.value
-                        +e.main-value FR 4352
-                        +e.hr
-                        +e.second-value IBZ - MAD
-
-                +e.item
-                  +b.price-card
-                    +e.content
-                      +e.title.warn restrasado
-                      +e.date 12 Septembre
-                      +e.value
-                        +e.main-value U2 3456
-                        +e.hr
-                        +e.second-value mxp - bcn
-
-                +e.item
-                  +b.price-card
-                    +e.content
-                      +e.title.accent overbooking
-                      +e.date 20 Julio
-                      +e.value
-                        +e.main-value IB 4352
-                        +e.hr
-                        +e.second-value MAD - TFS
+      +section-faq()
 
     +e.row
-      +b.section--gray
-        .container
-          +b.complete-block
-            +e.left
-              +e.img
-                img(src="assets/images/phone-img.png")
-            +e.right
-              +e.title Why claim with Airning?
-              +e.description Claiming with Airning is easy and fast! Fill in the form, upload the documentation and that's it! We'll work hard to get your compensation and we will inform you at all times of the process.
-              +e.btn-wrap
-                +b.BUTTON.btn--large
-                  span complete your claim
+      +section-price()
 
     +e.row
-      +b.banner--second
-        .container
-          +e.content
-            +e.description Claim your compensation now, do not wait any longer!
-            +e.btn-wrap
-              +b.BUTTON.btn--lg.--reverse CLAIM
+      +section-complete()
+
+    +e.row
+      +banner-2()
