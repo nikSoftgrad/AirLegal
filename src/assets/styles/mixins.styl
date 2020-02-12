@@ -63,6 +63,15 @@ placeholder-color(color)
   &::-webkit-input-placeholder
     color color
 
+placeholder-size(size)
+  &:-moz-placeholder,
+  &::-moz-placeholder
+    font-size size
+    opacity 1
+
+  &::-webkit-input-placeholder
+    font-size size
+
 
 webfont(family, file)
   @font-face
