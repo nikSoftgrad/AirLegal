@@ -1,0 +1,69 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--claim
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Overbooking Claim
+
+    +e.row--mt-md
+      .container
+        .paragraph International law accepted by the European Union and regulated by EC Regulation N 261/2004 allows airlines to sell more seats than they have on offer. Sometimes this means that some passengers remain on land. It is what is known as #[span overbooking or denied boarding.]
+        .paragraph In case of overbooking on a flight you have the right to claim. However, there is a small print. Depending on whether you are considering voluntary or non-voluntary overbooking you will find it easier to get compensation.
+
+    +e.row--mt-lg
+      .container
+        +b.input-block
+          +e.item
+            +b.input-icon
+              +e.icon--flight
+                +inline-svg('flight')
+              input(type="text" placeholder="Your arlines")
+          +e.item
+            +b.input-icon
+              +e.icon--earth
+                +inline-svg('earth')
+              input(type="text" placeholder="Flight number")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="From (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="To (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon
+              input(type="text" placeholder="03/02/2020")
+
+          +e.item--btn
+            +b.BUTTON.btn--lg
+              span Claim Now
+
+    +e.row--mt-xlg
+      .container
+        .title Difference between voluntary and non-voluntary overbooking
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--sm
+              +e.title.accent 01
+              +e.content
+                +e.description #[span.accent Overbooking Volunteer:] You can not claim the European compensation but you can claim the refund of the ticket, the alternative transport and the conditions agreed with the airline.
+
+          +e.item
+            +b.card-claim--two.--sm
+              +e.title.accent 02
+              +e.content
+                +e.description #[span.accent Non-Volunteer overbooking:] You can claim the reimbursement of the ticket, the alternative transport, hotel if necessary and the European compensation of the EC regulation N 261/2004.
+
