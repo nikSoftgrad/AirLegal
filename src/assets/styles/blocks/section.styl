@@ -56,6 +56,12 @@
     flex-basis 360px
     margin-left 30px
 
+  &--four
+    padding 10px 0 0
+
+    & ^[0]__item
+      flex-basis 263px
+
 .list-options
   display flex
   justify-content space-between
@@ -124,6 +130,14 @@
     font-family font-family-Xbold
     box-shadow 0 8px 14px rgba(8,32,59,0.2)
 
+    &--flight
+      transform translateX(-50%) rotate(45deg)
+
+      .icon
+        fill #9ebde1
+        width 26px
+        height 29px
+
   &__content
     position relative
     background #fff
@@ -144,12 +158,24 @@
     bottom -10px
     box-shadow 0 10px 40px rgba(8, 32, 59, 0.08)
 
+  &--sm
+    & ^[0]__content
+      font-size 18px
+
 .list-claim
   display flex
   justify-content space-between
 
   &__item
     width calc(50% - 5px)
+
+  &--sm
+    margin-left -30px
+    justify-content center
+    & ^[0]__item
+      flex-basis 360px
+      width auto
+      margin-left 30px
 
 .card-claim
   position relative
@@ -165,6 +191,9 @@
     text-transform uppercase
     padding 10px 0
     position relative
+
+    &.accent
+      color #2a8cff
 
   &:before
     content ''
@@ -240,6 +269,38 @@
     background-size cover
     background-position center
     background-repeat no-repeat
+
+  &--one
+    background-image url('../images/claim-3.png')
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+
+  &--two
+    background-image url('../images/claim-3.png')
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+
+  &--three
+    background-image url('../images/claim-3.png')
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+
+  &--sm
+    padding 20px 30px
+    min-height 267px
+
+    & ^[0]__title
+      font-size 32px
+
+    & ^[0]__content
+      margin-top 5px
+
+    & ^[0]__description
+      font-size 20px
+      line-height 25px
 
 .li-dot
   width 100%
@@ -381,3 +442,26 @@
 
   &__btn-wrap
     margin-top 20px
+
+.list-ul
+  &__title
+    font-family font-family-reg
+    font-size 20px
+
+  ul
+    margin 0
+    font-family font-family-reg
+    font-size 16px
+    padding 5px 0
+
+    li
+      line-height 1.4
+      padding 0 5px 0 0
+
+      &:before
+        content '-'
+        display inline-block
+        margin-right 2px
+
+      & + &
+        margin-top 3px

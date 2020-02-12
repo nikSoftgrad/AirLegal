@@ -1,0 +1,106 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--claim
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Claim for Flight Delay
+
+    +e.row--mt-md
+      .container
+        .paragraph One of the most common cases that result in claim and compensation by passengers and for which the airlines respond is undoubtedly the fact #[span of suffering a delay in the flight.]
+        .paragraph There are many conditions that affect the time to claim about this type of incidence. Depending on the distance of the return or the waiting time at the airport you will be entitled to different indemnities.
+
+    +e.row--mt-lg
+      .container
+        +b.input-block
+          +e.item
+            +b.input-icon
+              +e.icon--flight
+                +inline-svg('flight')
+              input(type="text" placeholder="Your arlines")
+          +e.item
+            +b.input-icon
+              +e.icon--earth
+                +inline-svg('earth')
+              input(type="text" placeholder="Flight number")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="From (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="To (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon
+              input(type="text" placeholder="03/02/2020")
+
+          +e.item--btn
+            +b.BUTTON.btn--lg
+              span Claim Now
+
+    +e.row--mt-xlg
+      .container
+        .title In any case, the company, as long as it causes the following delays
+
+    +e.row--mt-xlg
+      .container
+        +b.list-airing--four
+          +e.item
+            +b.card-airing--sm
+              +e.number--flight
+                +inline-svg('flight')
+              +e.content Delay of more than 2 hours #[br] for short distance
+          +e.item
+            +b.card-airing--sm
+              +e.number--flight
+                +inline-svg('flight')
+              +e.content Delay of more than 4 hours #[br] for long distance
+          +e.item
+            +b.card-airing--sm
+              +e.number--flight
+                +inline-svg('flight')
+              +e.content Delay of more than 3 hours #[br] for short distance
+          +e.item
+            +b.card-airing--sm
+              +e.number--flight
+                +inline-svg('flight')
+              +e.content Delay of more than 3 hours #[br] for long distance
+
+    +e.row--mt-xlg
+      .container
+        .title Should offer the following options:
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--sm
+              +e.title.accent 01
+              +e.content
+                +e.description Sufficient food and refreshments, depending on the time needed to wait.
+
+          +e.item
+            +b.card-claim--two.--sm
+              +e.title.accent 02
+              +e.content
+                +b.list-ul
+                  +e.title Accommodation in the following situations :
+                  ul
+                    li When it is necessary to spend one or more nights.
+                    li In that it is necessary an additional stay to the one anticipated by the passenger.
+
+          +e.item
+            +b.card-claim--three.--sm
+              +e.title.accent 03
+              +e.content
+                +e.description Transportation between the airport and the place of accommodation (hotel or other).

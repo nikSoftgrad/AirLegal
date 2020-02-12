@@ -64,11 +64,20 @@ body
     & + &--mt-md
       margin-top 35px
 
+    & + &--mt-lg
+      margin-top 40px
+
+    & + &--mt-xlg
+      margin-top 65px
+
   &--help
     margin-bottom 70px
 
   &--user
     margin-bottom 10px
+
+  &--claim
+    margin-bottom 90px
 
 .header
   flex-shrink 0
@@ -104,3 +113,21 @@ a
 .hidden-md
   +below(lg-breakpoint)
     display none
+
+.paragraph
+  font-family font-family-reg
+  font-size 20px
+  line-height 1.4
+
+  span
+    font-family font-family-bold
+    color #2a8cff
+
+  & + &
+    margin-top 15px
+
+.title
+  font-family font-family-Xbold
+  font-size 26px
+  text-transform uppercase
+  line-height 32px
