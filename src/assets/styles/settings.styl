@@ -152,7 +152,7 @@ a
 
 .text-block
   h2
-    font-family Circe-ExtraBold,sans-serif
+    font-family Circe-ExtraBold
     font-size 26px
     text-transform uppercase
     line-height 32px
@@ -168,11 +168,21 @@ a
     margin-top 15px
 
   p + ul
+    margin-top 10px
+
+  p + ol
     margin-top 20px
+
+  ul + p
+    margin-top 20px
+
+  b
+    font-family Circe-ExtraBold
 
   ol
     list-style none
     counter-reset li
+    padding-left 0
 
     & > li
       position relative
@@ -184,7 +194,7 @@ a
       position absolute
       left 0
       top 0
-      font-family Circe-ExtraBold,sans-serif
+      font-family Circe-ExtraBold
       font-size 26px
       text-transform uppercase
       line-height 32px
@@ -196,3 +206,6 @@ a
     ul
       list-style disc
       padding-left 20px
+
+      li + li
+        margin-top 10px
