@@ -11,4 +11,62 @@ block content
             +e.description Have you been waiting for your flight for more than 3 hours? You have right to claim, you only need to fill the form and we will get the best compensation for you.
 
           +e.img-percent
-            img(src="assets/images/percent-claim.png", alt="")
+            img(src="assets/images/percent-claim.png")
+
+    +e.row--mt-reverse
+      .container
+        +b.input-block
+          +e.item
+            +b.input-icon
+              +e.icon--flight
+                +inline-svg('flight')
+              input(type="text" placeholder="Your arlines")
+          +e.item
+            +b.input-icon
+              +e.icon--earth
+                +inline-svg('earth')
+              input(type="text" placeholder="Flight number")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="From (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="To (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon
+              input(type="text" placeholder="03/02/2020")
+
+          +e.item--btn
+            +b.BUTTON.btn--lg
+              span Claim
+
+    +e.row--steps
+      .container
+        .title.title--lg.title--center You compensation is 3 steps away
+
+        +b.list-steps
+          +e.item
+            +b.step
+              +e.icon
+                img(src="assets/images/tap.png")
+              +e.text Create a #[span Claim]
+
+          +e.item
+            +b.step
+              +e.icon
+                img(src="assets/images/man.png")
+              +e.text Add #[span passengers]
+
+          +e.item
+            +b.step
+              +e.icon
+                img(src="assets/images/copy.png")
+              +e.text Upload #[span documents]
