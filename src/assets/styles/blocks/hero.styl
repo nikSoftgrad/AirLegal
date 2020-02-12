@@ -41,6 +41,28 @@
     & + &
       margin-top 5px
 
+  +below(lg-breakpoint)
+    padding 20px 0
+
+    &__description
+      text-align center
+
+    &__content
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+
+    &__input-wrap
+      margin 30px auto 0
+
+  +below(xs-breakpoint)
+    &__description
+      font-size 18px
+
+    &__input-wrap
+      width 100%
+
 .custom-title
   font-family font-family-Xbold
   color #fff
@@ -73,3 +95,14 @@
       background #2a8cff
       border-radius 10px
       transform skew(-15deg)
+
+  +below(lg-breakpoint)
+    span
+      font-size 35px
+      line-height 45px
+
+  +below(xs-breakpoint)
+    span
+      font-size 26px
+      line-height 30px
+      text-align center
