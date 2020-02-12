@@ -1,0 +1,73 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--claim
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Claim for cancelled flight
+
+    +e.row--mt-md
+      .container
+        .paragraph #[span The cancellation] is one of the most serious cases that can suffer a passenger since it means that the passenger can not fly under the conditions chosen (he is supposed to have chosen from several airlines and has paid a price to fly under those conditions), for which airlines are required to compensate for such damage.
+        .paragraph So the chances of claiming are greater than in the other cases, because the mere fact that a cancellation has already occurred means not being able to fly, and it is not necessary to prove whether or not a cancellation existed, so it already implies a compensation if certain requirements are met.
+
+    +e.row--mt-lg
+      .container
+        +b.input-block
+          +e.item
+            +b.input-icon
+              +e.icon--flight
+                +inline-svg('flight')
+              input(type="text" placeholder="Your arlines")
+          +e.item
+            +b.input-icon
+              +e.icon--earth
+                +inline-svg('earth')
+              input(type="text" placeholder="Flight number")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="From (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="To (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon
+              input(type="text" placeholder="03/02/2020")
+
+          +e.item--btn
+            +b.BUTTON.btn--lg
+              span Claim Now
+
+    +e.row--mt-md
+      .container
+        .paragraph The time you lost, whether you have been offered alternatives, if you have been covered with food and if you have been offered accommodation, comes into play.
+
+    +e.row--mt-xlg
+      .container
+        .title In what cases can compensation be reduced?
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--sm
+              +e.title.accent 01
+              +e.content
+                +e.description Have you been offered an alternative transportation? It can be reduced up to 50 %.
+
+          +e.item
+            +b.card-claim--two.--sm
+              +e.title.accent 02
+              +e.content
+                +e.description Have they provided you with a place to rest? It can be reduced up to 50 %.
+
