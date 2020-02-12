@@ -88,6 +88,9 @@ body
   &--compensation
     margin-bottom 20px
 
+  &--text
+    margin-bottom 50px
+
 .header
   flex-shrink 0
   position sticky
@@ -146,3 +149,50 @@ a
 
   &--center
     text-align center
+
+.text-block
+  h2
+    font-family Circe-ExtraBold,sans-serif
+    font-size 26px
+    text-transform uppercase
+    line-height 32px
+    color #2a8cff
+
+  p
+    font-family font-family-reg
+    font-size 16px
+    line-height 1.2
+    margin 0
+
+  p + p
+    margin-top 15px
+
+  p + ul
+    margin-top 20px
+
+  ol
+    list-style none
+    counter-reset li
+
+    & > li
+      position relative
+      padding-left 30px
+
+    & > li:before
+      counter-increment li
+      content counters(li,".") ". "
+      position absolute
+      left 0
+      top 0
+      font-family Circe-ExtraBold,sans-serif
+      font-size 26px
+      text-transform uppercase
+      line-height 32px
+      color #2a8cff
+
+    li + li
+      margin-top 20px
+
+    ul
+      list-style disc
+      padding-left 20px
