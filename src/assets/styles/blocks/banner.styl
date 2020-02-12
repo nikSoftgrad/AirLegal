@@ -28,6 +28,18 @@
     min-height 400px
     color #fff
 
+    +below(sm-breakpoint)
+      padding 40px 0
+
+      & ^[0]__content
+        padding-bottom 0
+
+      & ^[0]__title
+        font-size 40px
+
+      & ^[0]__description
+        font-size 24px
+
   &--second
     background-image url('../images/banner-2.png')
     background-size cover
