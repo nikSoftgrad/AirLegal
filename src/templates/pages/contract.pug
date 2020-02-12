@@ -2,7 +2,7 @@ extends ../layouts/main
 
 block content
 
-  +b.page--main
+  +b.page--contract
     +e.row
       +b.contract
         .container
@@ -41,3 +41,41 @@ block content
               +e.row--btn
                 +b.BUTTON.btn--lg
                   span send message
+
+    +e.row
+      .container
+        +b.list-info
+          +e.item
+            +b.contract-info
+              +e.icon
+                img(src="assets/images/phone.png")
+              +e.content
+                +e.title Phone number
+                +e.phone +7 (567) 000-90-90
+
+          +e.item
+            +b.contract-info
+              +e.icon
+                img(src="assets/images/place.png")
+              +e.content
+                +e.title Address
+                +e.text London, Rous street 34
+
+          +e.item
+            +b.contract-info
+              +e.icon
+                img(src="assets/images/envelope.png")
+              +e.content
+                +e.title E-mail
+                +e.email airlegal@mail.com
+
+          +e.item
+            +b.contract-info
+              +e.icon
+                img(src="assets/images/wall-clock.png")
+              +e.content
+                +e.title Time work
+                +e.text 9 a.m .to 10 p.m.
+
+
+
