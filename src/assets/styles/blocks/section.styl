@@ -144,6 +144,7 @@
     font-size 18px
     line-height 26px
     text-align center
+    width 100%
 
 .card-airing
   position relative
@@ -456,7 +457,7 @@
   &__title
     font-family font-family-Xbold
     font-size 32px
-    line-height 24px
+    line-height 32px
 
     & + .faq__subtitle
       margin-top 20px
@@ -472,11 +473,16 @@
     line-height 26px
 
   &__row
+    width 100%
+
     & + &
       margin-top 25px
 
     & + &--btn
       margin-top 30px
+
+    &--btn
+      display flex
 
   &__left
     width 50%
@@ -492,6 +498,7 @@
   &__img
     display flex
     justify-content flex-end
+    align-items flex-start
     width 100%
 
     img
@@ -518,18 +525,24 @@
     max-width 465px
     margin-left 20px
     padding-top 42px
+    display flex
+    flex-direction column
+    align-items flex-start
+    width 100%
 
   &__title
     font-family font-family-Xbold
     font-size 32px
     line-height 24px
     text-transform uppercase
+    width 100%
 
   &__description
     font-family font-family-reg
     font-size 20px
     line-height 30px
     margin-top 25px
+    width 100%
 
   &__btn-wrap
     margin-top 30px

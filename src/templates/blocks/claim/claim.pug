@@ -1,0 +1,33 @@
+mixin claim()
+  +b.input-block
+    +e.item
+      +b.input-icon
+        +e.icon--flight
+          +inline-svg('flight')
+        input(type="text" placeholder="Your arlines")
+    +e.item
+      +b.input-icon
+        +e.icon--earth
+          +inline-svg('earth')
+        input(type="text" placeholder="Flight number")
+
+    +e.item
+      +b.input-icon
+        +e.icon--place
+          +inline-svg('place')
+        input(type="text" placeholder="From (airport)")
+
+    +e.item
+      +b.input-icon
+        +e.icon--place
+          +inline-svg('place')
+        input(type="text" placeholder="To (airport)")
+
+    +e.item
+      +b.input-icon
+        +e.icon
+        input(type="text" placeholder="03/02/2020")
+
+    +e.item--btn
+      +b.BUTTON.btn--lg
+        span Claim
