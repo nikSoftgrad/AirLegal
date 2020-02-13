@@ -76,3 +76,37 @@
 
     p + p
       margin-top 17px
+
+  +below(sm-breakpoint)
+    &__title
+      font-size 22px
+      line-height 1.5
+
+    &__content
+      margin-top 20px
+
+    &__item
+      height auto
+      max-height none
+      min-height 60px
+
+      &.isActive
+        max-height none
+
+    &__link
+      padding 10px 55px 10px 15px
+      min-height 60px
+
+    &__icon
+      margin-right 12px
+
+    &__link-content
+      font-size 18px
+
+    &__text
+      padding 0 20px 10px 42px
+      font-size 17px
+      line-height 26px
+
+      p + p
+        margin-top 15px
