@@ -35,8 +35,11 @@
       margin-left 20px
 
   +below(md-breakpoint)
-    height 60px
+    height 70px
     position relative
+
+    a
+      font-size 18px
 
     .collapse
       display block
@@ -65,7 +68,7 @@
       overflow hidden
 
       &.isOpen
-        max-height 300px
+        max-height 335px
         height auto
 
       .navbar
@@ -82,7 +85,7 @@
     display flex
 
     +below(lg-breakpoint)
-      height 30px
+      height 42px
       width auto
 
 .navbar
@@ -96,6 +99,8 @@
 
   +below(md-breakpoint)
     flex-direction column
+    border-top 1px solid #dadada
+    padding-bottom 10px
 
     &__right
       margin-left 0
@@ -130,7 +135,7 @@
       width 100%
       position relative
       text-align left
-      min-height 44px
+      min-height 50px
       display flex
       align-items center
 
@@ -152,14 +157,12 @@
 
     .btn
       width 100%
-      height 36px
-      min-height 36px
 
 .collapse
   cursor pointer
 
   &__line
-    background #aaaaaa
+    background #9ebde1
     display block
     width 30px
     height 4px
