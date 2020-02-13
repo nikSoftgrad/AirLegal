@@ -1,0 +1,122 @@
+.overlay
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 10
+  background rgba(0,0,0, .7)
+
+.modal
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100vh
+  padding 20px
+  z-index 11
+
+  &__dialog
+    width 100%
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+
+  &__content
+    max-width 500px
+    background #ffffff
+    width 100%
+    padding 50px 20px 35px
+    position relative
+
+  &__close
+    font-family font-family-reg
+    font-size 40px
+    line-height 40px
+    text-align center
+    width 40px
+    height 40px
+    cursor pointer
+    transition all .2s
+    position absolute
+    top 0
+    right 0
+    opacity .5
+
+    &:hover
+      opacity 1
+
+  &__title
+    font-family font-family-Xbold
+    font-size 26px
+    line-height 1.2
+    text-align center
+    text-transform uppercase
+
+    +below(sm-breakpoint)
+      font-size 20px
+
+  &__header
+    padding 0 35px
+
+    +below(sm-breakpoint)
+      padding 0
+
+  .form
+    box-shadow none
+    padding 20px 30px
+
+    .form__row+.form__row--link
+      margin-top 10px
+
+    .form__row+.form__row--btn-center
+      margin-top 35px
+
+    .form__row+.form__row--describe
+      margin-top 30px
+
+    &__row
+      &--link
+        display flex
+        justify-content flex-end
+        margin-right -7px
+
+      &--btn-center
+        display flex
+        justify-content center
+
+    &__description
+      font-family font-family-reg
+      text-align center
+      font-size 18px
+      line-height 1
+
+      a
+        text-decoration underline
+
+        &:hover
+          color #2a8cff
+          text-decoration none
+
+      +below(sm-breakpoint)
+        font-size 14px
+
+    &__link
+      font-family font-family-reg
+      color #2a8cff
+      font-size 14px
+      line-height 1
+      border 0
+      box-shadow 0
+      outline none
+      background transparent
+      text-decoration underline
+      cursor pointer
+      transition all .2s
+
+      &:hover
+        text-decoration none
+
+    +below(sm-breakpoint)
+      padding 10px 0

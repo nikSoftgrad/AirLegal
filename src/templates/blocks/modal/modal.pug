@@ -1,0 +1,22 @@
+mixin modal()
+  div
+    .overlay
+    +b.modal
+      +e.dialog
+        +e.content
+          +e.close x
+          +e.header
+            +e.title enter and check the status of your claims
+          +e.body
+            +b.form
+              +e.row
+                input(type="text" placeholder="User").input-main
+              +e.row
+                input(type="text" placeholder="Password").input-main
+              +e.row--link
+                +e.BUTTON.link Forgot your password?
+              +e.row--btn-center
+                +b.BUTTON.btn--lg Enter
+
+              +e.row--describe
+                +e.description If you do not have an account #[a(href="/") Register]
