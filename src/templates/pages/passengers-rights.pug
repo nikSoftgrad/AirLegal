@@ -1,0 +1,93 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--compensation
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Rights of air passengers
+
+    +e.row--mt-lg
+      .container
+        +b.input-block
+          +e.item
+            +b.input-icon
+              +e.icon--flight
+                +inline-svg('flight')
+              input(type="text" placeholder="Your arlines")
+          +e.item
+            +b.input-icon
+              +e.icon--earth
+                +inline-svg('earth')
+              input(type="text" placeholder="Flight number")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="From (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon--place
+                +inline-svg('place')
+              input(type="text" placeholder="To (airport)")
+
+          +e.item
+            +b.input-icon
+              +e.icon
+              input(type="text" placeholder="03/02/2020")
+
+          +e.item--btn
+            +b.BUTTON.btn--lg
+              span Claim Now
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--xs
+              +e.title In what cases can I claim?
+              +e.content
+                +e.item
+                  .plus +
+                  | Claim for flight delay
+                +e.item
+                  .plus +
+                  | Claim for flight cancellation
+                +e.item
+                  .plus +
+                  | Overbooking
+              +e.action
+                +b.BUTTON.btn--lg
+                  span CLAIM now
+
+          +e.item
+            +b.card-claim--two.--xs
+              +e.title Compensation and distances
+              +e.content--sm
+                +e.description The rights of the passenger establish relationship between the distance of the flight and the economic compensation
+                +e.item--sm
+                  +b.li-dot
+                    +e.left 0 - 1500 km
+                    +e.middle
+                    +e.right 250€
+                +e.item--sm
+                  +b.li-dot
+                    +e.left 1500 - 3500 km
+                    +e.middle
+                    +e.right 400€
+                +e.item--sm
+                  +b.li-dot
+                    +e.left + 3500 km
+                    +e.middle
+                    +e.right 600€
+
+          +e.item
+            +b.card-claim--three.--xs
+              +e.title In which cases there is no compensation?
+              +e.content
+                +e.description Cancellation due to circumstances extraordinary (adverse weather, etc.)
+                +e.description If you were informed of the delay at least two weeks in advance
+                +e.description If you were offered an alternative to the same route with a similar schedule

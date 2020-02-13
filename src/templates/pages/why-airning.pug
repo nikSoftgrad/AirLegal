@@ -1,0 +1,29 @@
+extends ../layouts/main
+
+block content
+
+  +b.page--claim
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Why claim with Airning?
+
+    +e.row--mt-lg
+      +b.section--faq
+        .container
+          +b.faq
+            +e.left
+              +e.row
+                +e.title About us?
+                +e.subtitle Airning facilitates the claims and takes care of the whole process
+              +e.row
+                +e.description Airning is a company with a technological vocation founded in 2016 that was born with the aim of informing and assisting airline passengers that are encountering incidents in the course of their flight.
+              +e.row--btn
+                +b.A(href="contract.html").btn--lg
+                  span Contact us
+
+            +e.right
+              +e.img
+              img(src="assets/images/faq-img.png", alt="")
+
+
