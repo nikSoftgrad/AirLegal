@@ -24,6 +24,29 @@
     margin-left 132px
     flex-grow 1
 
+  +below(md-breakpoint)
+    &__main
+      flex-direction row
+
+    .container
+      flex-direction column
+      width 100%
+
+    &__content
+      margin-left 0
+      margin-top 20px
+      width 100%
+
+  +below(sm-breakpoint)
+    .logo
+      display none
+
+  +below(xs-breakpoint)
+    padding 40px 0
+
+    &__copyright
+      line-height 30px
+
 .list-footer
   display flex
   width 100%
@@ -34,6 +57,26 @@
 
     &:nth-child(3)
       margin-left 90px
+
+  +below(sm-breakpoint)
+    flex-wrap wrap
+
+    &__item
+      flex-basis 290px
+      margin-right 10px
+      margin-top 20px
+
+      &:nth-child(2)
+        margin-left 0
+
+      &:nth-child(3)
+        margin-left 0
+
+  +below(xs-breakpoint)
+    justify-content space-between
+
+    &__item
+      flex-basis auto
 
 .list-link
   display flex

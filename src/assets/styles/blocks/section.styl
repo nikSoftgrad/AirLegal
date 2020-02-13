@@ -4,18 +4,21 @@
     background #fff
 
     +below(xs-breakpoint)
-      padding 30px 0
+      padding 45px 0 50px
 
   &--options
     padding 65px 0 60px
     background #fff
 
     +below(xs-breakpoint)
-      padding 30px 0
+      padding 40px 0
 
   &--faq
     padding 70px 0
     background #f4f7fb
+
+    +below(xs-breakpoint)
+      padding 40px 0 50px
 
   &--price
     padding 70px 0 80px
@@ -44,19 +47,30 @@
     width 100%
 
     +below(xs-breakpoint)
-      font-size 24px
-      line-height 1.2
+      font-size 22px
+      line-height 1.5
+      padding 0 15px
 
   &__row
     &--airing
       margin-top 75px
 
+      +below(xs-breakpoint)
+        margin-top 25px
+
     &--claim
       margin-top 65px
+
+      +below(xs-breakpoint)
+        margin-top 45px
 
     &--options
       margin-top 50px
       padding 0 30px
+
+      +below(xs-breakpoint)
+        margin-top 15px
+        padding 0
 
 .list-airing
   display flex
@@ -89,6 +103,13 @@
       &:last-child
         margin-bottom 0
 
+  +below(xs-breakpoint)
+    &__item
+      margin-bottom 23px
+
+      &:last-child
+        margin-bottom 0
+
 .list-options
   display flex
   justify-content space-between
@@ -106,6 +127,9 @@
       flex-grow 1
       padding 20px
 
+  +below(xs-breakpoint)
+    &__item
+      padding 15px 20px
 
 .claim-user
   margin-left -30px
@@ -145,6 +169,10 @@
     line-height 26px
     text-align center
     width 100%
+
+  +below(xs-breakpoint)
+    &__text
+      margin-top 20px
 
 .card-airing
   position relative
@@ -200,6 +228,38 @@
   &--sm
     & ^[0]__content
       font-size 18px
+
+  +below(xs-breakpoint)
+    display flex
+    align-items center
+    justify-content center
+
+    &:before
+      display none
+
+    &__number
+      position relative
+      top auto
+      left auto
+      transform none
+      width 35px
+      height 35px
+      margin-right 15px
+      font-size 16px
+      line-height 16px
+      padding-top 3px
+      box-shadow none
+      margin-bottom 3px
+
+    &__content
+      padding 0
+      background transparent
+      box-shadow none
+      min-height auto
+      font-size 18px
+      line-height 22px
+      width 175px
+      text-align left
 
 .list-claim
   display flex
@@ -394,6 +454,33 @@
     .li-dot
       font-size 16px
 
+  +below(xs-breakpoint)
+    padding 22px 30px 32px
+    font-size 20px
+
+    &__title
+      font-size 22px
+      line-height 1.3
+
+    &__content
+      margin-top 10px
+
+    &__action
+      margin-top 25px
+      align-items flex-start
+
+    &__btn
+      margin-top 25px
+
+    &__description
+      font-size 18px
+    .card-claim__content--sm .card-claim__description
+        margin-bottom 15px
+
+    &__item
+      &--sm
+        padding-right 25px
+
 .list-steps
   display flex
   justify-content space-around
@@ -484,6 +571,9 @@
     &--btn
       display flex
 
+    &--tablet-img
+      display none
+
   &__left
     width 50%
     padding-right 105px
@@ -504,6 +594,33 @@
     img
       display flex
       max-width 100%
+
+  +below(md-breakpoint)
+    &__right
+      display none
+
+    &__left
+      padding 0
+      width 100%
+      text-align center
+
+    &__row
+      &--tablet-img
+        display flex
+        justify-content center
+
+      &--btn
+        justify-content center
+
+  +below(xs-breakpoint)
+    &__title
+      font-size 23px
+      line-height 28px
+
+    &__subtitle
+      font-size 20px
+      line-height 24px
+      margin-top 17px
 
 .complete-block
   display flex
@@ -546,6 +663,45 @@
 
   &__btn-wrap
     margin-top 30px
+
+  +below(1100px)
+    flex-direction column-reverse
+    align-items center
+    padding 70px 0 0
+
+    &__left
+      padding 0
+      max-width 400px
+
+    &__right
+      padding 0
+      margin 0
+      text-align center
+      align-items center
+      margin-bottom 40px
+
+  +below(md-breakpoint)
+    &__title
+      line-height 32px
+
+  +below(xs-breakpoint)
+    padding 50px 0 0
+
+    &__title
+      font-size 22px
+      line-height 1.5
+
+    &__left
+      max-width 180px
+      margin-bottom -50px
+
+    &__description
+      font-size 18px
+      line-height 26px
+      margin-top 10px
+
+    &__btn-wrap
+      margin-top 25px
 
 .claim-card
   box-shadow 0 10px 30px rgba(8, 32, 59, 0.13)

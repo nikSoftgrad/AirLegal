@@ -44,6 +44,19 @@
       & ^[0]__description
         font-size 24px
 
+    +below(xs-breakpoint)
+      height 200px
+
+      & ^[0]__content
+        padding-bottom 0
+        padding-top 10px
+
+      & ^[0]__title
+        font-size 50px
+
+      & ^[0]__description
+        font-size 22px
+
   &--second
     background-image url('../images/banner-2.png')
     background-size cover
@@ -68,6 +81,15 @@
       width 100%
       display flex
       justify-content center
+
+    +below(xs-breakpoint)
+      height 200px
+
+      & ^[0]__btn-wrap
+        margin-top 20px
+
+      & ^[0]__description
+        font-size 22px
 
   &--claim
     background-image url('../images/banner-claim.png')
@@ -146,6 +168,21 @@
   &__list
     margin-top 50px
     width 100%
+
+  +below(md-breakpoint)
+    &__list
+      display none
+
+    &__title
+      line-height 32px
+
+  +below(xs-breakpoint)
+    &__title
+      font-size 22px
+      line-height 1.5
+
+    .price-block__title+.price-block__subtitle
+      margin-top 13px
 
 .list-price
   display flex
