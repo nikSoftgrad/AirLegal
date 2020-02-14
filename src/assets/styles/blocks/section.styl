@@ -447,7 +447,8 @@
     min-height 267px
 
     & ^[0]__title
-      font-size 32px
+      &.accent
+        font-size 32px
 
     & ^[0]__content
       margin-top 5px
@@ -469,6 +470,23 @@
     & ^[0]__description
       font-size 18px
       line-height 20px
+
+  &--column
+    display flex
+    flex-direction column
+    width 100%
+
+    & ^[0]__title
+      flex-shrink 0
+
+    & ^[0]__action
+      flex-shrink 0
+
+    & ^[0]__content
+      flex-grow 1
+
+    +below(sm-breakpoint)
+      min-height auto
 
   +below(lg-breakpoint)
     padding 20px
@@ -511,6 +529,7 @@
 
     &__description
       font-size 18px
+
     .card-claim__content--sm .card-claim__description
         margin-bottom 15px
 
@@ -623,6 +642,11 @@
     font-family font-family-reg
     font-size 17px
     line-height 26px
+
+  &__descr-accent
+    font-family font-family-reg
+    color #2a8cff
+    padding 10px 0 0 10px
 
   &__row
     width 100%
