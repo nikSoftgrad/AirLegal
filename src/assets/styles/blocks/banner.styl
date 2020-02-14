@@ -148,6 +148,32 @@
       top -25px
       right 108px
 
+    +below(sm-breakpoint)
+      & ^[0]__title
+        font-size 22px
+        line-height 1.5
+
+      & ^[0]__description
+        font-size 18px
+        line-height 1.4
+
+      & ^[0]__content
+        padding 0
+        width 100%
+
+      & ^[0]__img-percent
+        display none
+
+    +below(xs-breakpoint)
+      padding 25px 0 30px
+      background #2a8cff
+
+      & ^[0]__title
+        line-height 1.2
+
+      & ^[0]__description
+        margin-top 12px
+
 .price-block
   display flex
   flex-direction column

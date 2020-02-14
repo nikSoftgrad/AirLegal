@@ -14,7 +14,7 @@ block content
           +e.img-percent
             img(src="assets/images/percent-claim.png")
 
-    +e.row--mt-reverse
+    +e.row--mt-reverse.--center
       .container
         +claim()
 
@@ -25,18 +25,25 @@ block content
         +b.list-steps
           +e.item
             +b.step
-              +e.icon
+              +e.icon--clime
                 img(src="assets/images/tap.png")
               +e.text Create a #[span Claim]
 
           +e.item
             +b.step
-              +e.icon
+              +e.icon--passanger
                 img(src="assets/images/man.png")
               +e.text Add #[span passengers]
 
           +e.item
             +b.step
-              +e.icon
+              +e.icon--doc
                 img(src="assets/images/copy.png")
               +e.text Upload #[span documents]
+
+    +e.row--banner
+      +b.banner--first
+        .container
+          +e.content
+            +e.title 99%
+            +e.description of successful claims

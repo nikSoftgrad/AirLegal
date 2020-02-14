@@ -76,6 +76,12 @@ body
     & + &--steps
       margin-top 85px
 
+    &--center
+      width 100%
+      .container
+        display flex
+        justify-content center
+
   &--help
     margin-bottom 70px
 
@@ -92,15 +98,49 @@ body
     margin-bottom 90px
 
     +below(sm-breakpoint)
-      // padding 30px 0
+      margin-bottom 40px
 
       & ^[0]__title
         font-size 22px
         line-height 1.5
         padding 0
 
+      .page__row+.page__row--mt-md
+        margin-top 20px
+
+      .page__row+.page__row--center
+        margin-top 22px
+
+      .page__row+.page__row--mt-xlg
+        margin-top 40px
+
   &--compensation
     margin-bottom 20px
+
+    & ^[0]__row
+      &--banner
+        display none
+
+    +below(sm-breakpoint)
+      display flex
+      flex-direction column
+      width 100%
+      margin-bottom 0
+
+      & ^[0]__row
+        order 1
+
+        &--center
+          order 3
+          margin 30px 0
+
+        &--steps
+          order 2
+          margin-top 25px
+
+        &--banner
+          order 4
+          display block
 
   &--text
     margin-bottom 50px
@@ -149,6 +189,10 @@ a
     font-family font-family-bold
     color #2a8cff
 
+  +below(sm-breakpoint)
+    font-size 18px
+    line-height 26px
+
   & + &
     margin-top 15px
 
@@ -162,6 +206,11 @@ a
     font-size 32px
 
   &--center
+    text-align center
+
+  +below(xs-breakpoint)
+    font-size 22px
+    line-height 1.5
     text-align center
 
 .text-block
@@ -226,6 +275,9 @@ a
         margin-top 10px
 
   +below(sm-breakpoint)
+    a
+      word-break break-all
+
     h2
       font-size 22px
       line-height 1.5
